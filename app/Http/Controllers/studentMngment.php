@@ -24,7 +24,7 @@ class studentMngment extends Controller
         return DataTables::of($stu_data) 
         -> addColumn('action', function(){
 
-         return "<a  href='{{Url('student@create')}}'  class='btn btn-info btn-sm'>View</a> <button class='btn btn-warning btn-sm'>Update</button> <button class='btn btn-danger btn-sm'>Delete</button>";
+         return "<a  href='{{url('update')}}'  class='btn btn-info btn-sm'>View</a> <button class='btn btn-warning btn-sm'>Update</button> <button class='btn btn-danger btn-sm'>Delete</button>";
            
 
         })-> rawColumns(['action'])

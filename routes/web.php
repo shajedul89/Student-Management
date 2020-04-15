@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::resource('student','studentMngment');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
